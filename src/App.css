@@ -1,38 +1,78 @@
 .App {
   text-align: center;
+  max-width: 60rem;
+  width: 80%;
+  margin: 2rem auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-desc {
+  font-size: 1.2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.temp-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.temp {
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgb(255, 167, 66);
+}
+
+.unit {
+  position: absolute;
+  font-size: 1.5rem;
+  color: rgb(255, 167, 66);
+  line-height: 2.2;
+}
+
+.location-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.location-btn {
+  background-color: rgb(65, 65, 65);
+  font-size: 1rem;
+  display: block;
+  border: none;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  /*input has OS specific font-family*/
+  color: rgb(144, 220, 255);
+  cursor: pointer;
+}
+
+.location-btn:hover {
+  background-color: rgb(41, 41, 41);
+}
+
+.forcast {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.search-box-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-box {
+  margin-top: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-input {
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #999;
+  border: none;
+  color: rgb(253, 253, 253);
 }
